@@ -6,6 +6,7 @@
   "scripts": {
     "test": "tape spec/*.js | faucet",
     "png": "cd examples && node ./png.js && cd --",
+    "gif": "cd examples && node ./gif.js && cd --",
     "anim": "node ./examples/anim.js"
   },
   "author": "Michael Vogt",
@@ -14,7 +15,9 @@
     "pngjs": "^2.2.0"
   },
   "devDependencies": {
+    "concat-frames": "^1.0.3",
     "faucet": "0.0.1",
+    "gif-stream": "^1.1.0",
     "tape": "^4.4.0"
   }
 }

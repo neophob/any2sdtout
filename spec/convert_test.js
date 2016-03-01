@@ -108,7 +108,7 @@ test('convert32bppImageToText - no input parameters, should throw exception', fu
 	   t.fail('should throw error');
 	 } catch (e) {
 		 //THEN
-	   t.equal(e.message, 'invalid input data, make sure data is 4bpp (alpha channel ignored)');
+	   t.equal(e.message, 'invalid input data, make sure data is 4bpp');
 	 }	 
 });
 
