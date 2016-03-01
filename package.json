@@ -1,0 +1,20 @@
+{
+  "name": "any2stdout",
+  "version": "1.0.0",
+  "description": "display media in your terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape spec/*.js | faucet",
+    "png": "cd examples && node ./png.js && cd --",
+    "anim": "node ./examples/anim.js"
+  },
+  "author": "Michael Vogt",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "pngjs": "^2.2.0"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.4.0"
+  }
+}
