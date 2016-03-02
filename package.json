@@ -7,6 +7,7 @@
     "test": "tape spec/*.js | faucet",
     "png": "cd examples && node ./png.js && cd --",
     "gif": "cd examples && node ./gif.js && cd --",
+    "alpha": "cd examples && node ./alphabet.js && cd --",
     "anim": "node ./examples/anim.js"
   },
   "author": "Michael Vogt",

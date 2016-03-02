@@ -43,7 +43,7 @@ test('convert32bppImageToText - convert full black', function(t) {
 	 const result = convert.convert32bppImageToText(input, output);
 
 	 //THEN
-	 t.equal(result, '  \n  \n');
+	 t.equal(result, '  \n  ');
 });
 
 test('convert32bppImageToText - convert full white', function(t) {
@@ -56,7 +56,7 @@ test('convert32bppImageToText - convert full white', function(t) {
 	 const result = convert.convert32bppImageToText(input, output);
 
 	 //THEN
-	 t.equal(result, 'MM\nMM\n');
+	 t.equal(result, 'MM\nMM');
 });
 
 test('convert32bppImageToText - convert too large value (wrap around)', function(t) {
@@ -69,7 +69,7 @@ test('convert32bppImageToText - convert too large value (wrap around)', function
 	 const result = convert.convert32bppImageToText(input, output);
 
 	 //THEN
-	 t.equal(result, 'NN\nNN\n');
+	 t.equal(result, 'MM\nMM');
 });
 
 test('convert32bppImageToText - option delimiter', function(t) {
@@ -82,7 +82,7 @@ test('convert32bppImageToText - option delimiter', function(t) {
 	 const result = convert.convert32bppImageToText(input, output, {delimiter: 'x'});
 
 	 //THEN
-	 t.equal(result, 'MMxMMx');
+	 t.equal(result, 'MMxMM');
 });
 
 test('convert32bppImageToText - option alphabet', function(t) {
@@ -95,7 +95,7 @@ test('convert32bppImageToText - option alphabet', function(t) {
 	 const result = convert.convert32bppImageToText(input, output, {alphabet: 'abc', delimiter: 'x'});
 
 	 //THEN
-	 t.equal(result, 'ccxccx');
+	 t.equal(result, 'ccxcc');
 });
 
 test('convert32bppImageToText - no input parameters, should throw exception', function(t) {
@@ -109,7 +109,7 @@ test('convert32bppImageToText - no input parameters, should throw exception', fu
 	 } catch (e) {
 		 //THEN
 	   t.equal(e.message, 'invalid input data, make sure data is 4bpp');
-	 }	 
+	 }
 });
 
 test('convert32bppImageToText - no output parameters, should throw exception', function(t) {
@@ -124,5 +124,5 @@ test('convert32bppImageToText - no output parameters, should throw exception', f
 	 } catch (e) {
 		 //THEN
 	   t.equal(e.message, 'invalid output data');
-	 }	 
+	 }
 });
