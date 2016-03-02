@@ -1,16 +1,17 @@
 # any2stdout.js
 
-any2stdout converts an image buffer to ascii text that can be displayed. It works by calculating the average b/w value of a region and map this value to a ASCII char.
+any2stdout converts an image buffer to ASCII text that can be displayed. It works by calculating the average b/w value of a region and map this value to a ASCII char. At the current stage any2stdout supports 32bpp input data (alpha values are ignored) and 24bpp image data.
+
 
 ## Examples
 
-There are some simple examples included in this package:
+There are some simple examples included in this package (see `examples` subdirectory):
 
 * `npm run png`: render the image "in.png" in your console
 * `npm run gif`: render the animated gif "rick.gif" in your console (Congratulations, you've been rick rolled).
 * `npm run anim`: render an ugly animation in your console
 
-any2stdout contains some predefined alphabet collections (and you can define your own alphabet). The output quiality depends on your terminal font, here are some examples:
+any2stdout contains some predefined alphabet collections (and you can define your own alphabet). The output quality depends on your terminal font, here are some examples:
 
 ```
 ___ALPHABET_DEFAULT:
