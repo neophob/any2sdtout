@@ -13,12 +13,19 @@
   "author": "Michael Vogt",
   "license": "GPL-3.0",
   "dependencies": {
-    "pngjs": "^2.2.0"
+    "pngjs": "^2.2.0",
+    "concat-frames": "^1.0.3",
+    "gif-stream": "^1.1.0"
   },
   "devDependencies": {
-    "concat-frames": "^1.0.3",
     "faucet": "0.0.1",
-    "gif-stream": "^1.1.0",
     "tape": "^4.4.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/neophob/any2sdtout.git"
   }
 }
