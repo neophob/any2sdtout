@@ -12,9 +12,9 @@ exports.ALPHABET_ABC = 'ixndONM';
 exports.ALPHABET_123 = '17235980';
 
 exports.getScreenWidth = function() {
-  return process.stdout.columns;
+  return process.stdout.columns || 120;
 }
 
 exports.getScreenHeight = function() {
-  return process.stdout.rows;
+  return process.stdout.rows || 50;
 }
